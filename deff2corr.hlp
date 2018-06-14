@@ -1,0 +1,27 @@
+help deffcorr
+
+
+Title
+
+deffcorr - Incorporate Complex Sample Design Effects when Only a Final Survey Weight and Average Total Design Effects are Available
+
+
+Syntax
+
+deffcorr estimate linearizedSE avgDEFF DEFFwts eform
+
+
+estimate	weighted estimate of parameter from svy: analysis
+
+linearizedSE	linearized estimate of standard error of estimated parameter, using weights
+
+avgDEFF		average design effect provided by data producer
+
+DEFFwts		design effect for estimated parameter when using weights only, obtained using -estat effects-
+
+eform		binary indicator of whether exponentiated parameter estimates are required
+
+
+Examples
+
+See West and McCabe (2012) for a worked example.
